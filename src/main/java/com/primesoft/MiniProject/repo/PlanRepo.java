@@ -7,7 +7,7 @@ import com.primesoft.MiniProject.entity.Plan;
 public interface PlanRepo extends JpaRepository<Plan, Integer> {
 
 	
-	public Plan save();
+	//public Plan save();
 		
 	
 	

@@ -51,6 +51,11 @@ public class Plan {
 	@Column(name="UPDATED_DATE", insertable=false)
 	@UpdateTimestamp
 	private LocalDate updateDate;
+	
+
+	public Plan() {
+		super();
+	}
 
 	public Object getPlanId() {
 		return planId;
@@ -59,6 +64,17 @@ public class Plan {
 	public void setActiveSw(String status) {
 		this.activeSw = activeSw;
 	}
+
+	public Plan(String planName, LocalDate planStartDate, LocalDate planEndDate, String activeSw,
+			Integer planCategoryId) {
+		super();
+		this.planName = planName;
+		this.planStartDate = planStartDate;
+		this.planEndDate = planEndDate;
+		this.activeSw = activeSw;
+		this.planCategoryId = planCategoryId;
+	}
+
 
 	
 	
