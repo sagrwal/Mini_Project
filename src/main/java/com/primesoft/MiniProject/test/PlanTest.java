@@ -1,9 +1,9 @@
 package com.primesoft.MiniProject.test;
 
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.Test;
+
+import static org.junit.jupiter.Assertions.assertEquals;
 
 import com.primesoft.MiniProject.entity.Plan;
 import com.primesoft.MiniProject.service.PlanServiceImpl;
@@ -13,7 +13,7 @@ public class PlanTest {
 	private static PlanServiceImpl ser=null;
 	private static Plan p= null;
 	
-	@BeforeClass
+	@BeforeAll
 	public static void init() {
 	    ser= new PlanServiceImpl();
 	    p= new Plan();
@@ -24,7 +24,7 @@ public class PlanTest {
 		
 	}
 	
-	@AfterClass
+	@AfterAll
 	public static void destroy() {
 		ser=null;
 		p=null;
