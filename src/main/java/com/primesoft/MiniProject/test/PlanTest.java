@@ -39,5 +39,9 @@ public class PlanTest {
 		assertEquals(expectedResult, actualResult);
 		
 	}
+	
+	public void m1() {
+		System.out.println("Hello");
+	}
 
 }
